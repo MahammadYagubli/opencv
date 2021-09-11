@@ -1,0 +1,9 @@
+pic2=np.zeros((500,500,3))
+cv2.line(pic2, (10,15), (20, 350), (0,0,255)) #red
+cv2.line(pic2, (20, 350), (110,30 ), (255,0,0)) #blue
+cv2.line(pic2, (110,30), (150,500 ), (0,255,20)) #yellow
+font=cv2.FONT_HERSHEY_DUPLEX
+cv2.putText(pic2,'I loe you so much', (100,100), font,1,(2500,0,0),4,cv2.LINE_8)
+cv2.imshow('dark', pic2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
