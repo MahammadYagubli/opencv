@@ -1,0 +1,11 @@
+import numpy as np
+import cv2
+pic=np.zeros((500,500,3) )
+color=(0,0,500)
+cv2.circle(pic, (55,55), 30,color)
+cv2.circle(pic, (55,55), 40,color)
+cv2.circle(pic, (55,55), 50,color)
+cv2.circle(pic, (55,55), 60,color)
+cv2.imshow('dark',pic)
+cv2.waitKey(0)
+#cv2.destroyAllWindows()
