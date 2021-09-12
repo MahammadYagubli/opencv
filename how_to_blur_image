@@ -1,0 +1,14 @@
+#how to blur
+pic=cv2.imread('img.jpg')
+#matrix=(9,9)
+#GaussianBlur
+#blur=cv2.GaussianBlur(pic,matrix,0)
+#cv2.imshow('blurred', blur)
+#cv2.imshow('blurred', blur)
+
+#medianBlur
+kernel=5
+median=cv2.medianBlur(pic, kernel)
+cv2.imshow('median', median)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
