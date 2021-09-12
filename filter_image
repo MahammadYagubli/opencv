@@ -1,0 +1,9 @@
+#hot to use filtering and improving quality of picture
+pic=cv2.imread('img.jpg')
+dimpixel=7
+color=220
+space=220
+filter=cv2.bilateralFilter(pic,dimpixel,color,space)
+cv2.imshow('filter', filter)
+cv2.waitKey()
+cv2.destroyAllWindows()
